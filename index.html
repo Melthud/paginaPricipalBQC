@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BQC Corporación</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./public/img/BQC LOGO.ico">
+</head>
+<body class="m-0 p-0 font-[Montserrat]">
+
+  
+  <section>
+      <!-- NAVBAR PRINCIPAL -->
+      <nav class="bg-black fixed top-[0px] w-full text-white transition-all duration-300 z-50">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-1">
+            <!-- LOGO -->
+            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="./public/img/BQC BLANCO.avif" class="h-8" alt="BQC LOGO"/>
+            </a>
+    
+            <!-- BOTÓN DEL MENÚ PARA MÓVILES -->
+            <button id="menu-toggle-1" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                </svg>
+            </button>
+    
+            <!-- MENÚ DE NAVEGACIÓN (ESCRITORIO) -->
+            <div id="navbar-menu-1" class="hidden w-full md:block md:w-auto bg-black">
+                <ul class="text-xs w-full text-center flex flex-col p-1 md:p-0 mt-2 border border-gray-800 rounded-lg bg-black md:flex-row md:space-x-2 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-black dark:bg-gray-900 md:dark:bg-black dark:border-gray-700">
+                    <li><a href="https://maestriasyposgrados.bqc.com.ec/" class="block py-1 px-1 text-white hover:text-yellow-400">Maestrías</a></li>
+                    <li><a href="https://educacionsuperior.bqc.com.ec/" class="block py-1 px-1 text-white hover:text-yellow-400">Tecnologías</a></li>
+                    <li><a href="https://elearning.cjd.edu.ec/" class="block py-1 px-1 text-white hover:text-yellow-400">Bachillerato</a></li>
+                    <li><a href="https://capacitacion.bqc.com.ec/" class="block py-1 px-1 text-white hover:text-yellow-400">Educación Continua</a></li>
+                    <li><a href="https://www.bqc.com.ec/" class="block py-1 px-1 text-white hover:text-yellow-400">Comercializadora</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+  </section>
+
+
+  <section>
+    <!-- NAVBAR SECUNDARIO -->
+    <nav id="secondary-navbar" class="fixed top-[40px] w-full bg-transparent text-white transition-all duration-300 z-50">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-end mx-auto p-2">
+            <!-- BOTÓN DEL MENÚ PARA MÓVILES -->
+            <button id="menu-toggle-2" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200">
+                <span class="sr-only">Open secondary menu</span>
+                <svg class="w-5 h-5 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                </svg>
+            </button>
+
+            <!-- MENÚ SECUNDARIO -->
+            <div id="navbar-menu-2" class="hidden w-full md:block md:w-auto bg-transparent">
+                <ul class="text-xs w-full text-center flex flex-col p-1 md:p-0 mt-1 border border-transparent rounded-lg bg-transparent md:flex-row md:space-x-2 rtl:space-x-reverse md:mt-0">
+                    <li><a href="#empresasid" class="nav-link block py-1 px-1 text-white hover:text-yellow-400 transition-colors duration-300">Empresas</a></li>
+                    <li><a href="#indicators-section" class="nav-link block py-1 px-1 text-white hover:text-yellow-400 transition-colors duration-300">Indicadores</a></li>
+                    <li><a href="#quienes_somos" class="nav-link block py-1 px-1 text-white hover:text-yellow-400 transition-colors duration-300">Quiénes Somos</a></li>
+                    <li><a href="#mision_vision" class="nav-link block py-1 px-1 text-white hover:text-yellow-400 transition-colors duration-300">Misión/Visión</a></li>
+                    <li><a href="#sucrusales_1" class="nav-link block py-1 px-1 text-white hover:text-yellow-400 transition-colors duration-300">Sucursales</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</section>
+
+
+<section id="hero-section" class="relative w-full h-screen flex items-center justify-center overflow-hidden">
+  <!-- VIDEO DE FONDO -->
+  <video autoplay muted loop class="absolute top-0 left-0 w-full h-full object-cover z-1">
+      <source src="./public/video/Fondo.mp4" type="video/mp4">
+      Tu navegador no soporta videos.
+  </video>
+
+  <!-- SUPERPOSICIÓN PARA MEJOR VISIBILIDAD -->
+  <div class="absolute inset-0 bg-black/50"></div>
+
+  <!-- CONTENIDO SUPERPUESTO -->
+  <div class="relative flex flex-col items-center justify-center text-white text-center px-4">
+      <!-- LOGO ENCIMA DEL TEXTO -->
+      <img id="titulo-img" src="./public/img/BQC BLANCO.avif" alt="BQC Logo" class="w-40 md:w-96 h-auto mb-4">
+      
+      <!-- TEXTO CAMBIANTE ABAJO DEL LOGO -->
+      <div id="changing-text" class="text-3xl md:text-6xl font-[Pacifico] transition-opacity duration-500">
+          Eficiencia
+      </div>
+  </div>
+</section>
+
+<section id="empresasid" class="text-center py-6 px-5 pt-10 bg-white">
+    <p class="text-3xl font-bold uppercase relative after:content-[''] after:block after:w-16 after:h-[3px] after:bg-orange-500 after:mx-auto after:mt-1">
+        NUESTRAS <span class="text-orange-500">EMPRESAS</span>
+    </p>
+  <p class="text-2xl font-medium text-black mt-2 pt-6">EDUCACIÓN SUPERIOR</p>
+  <!-- CONTENEDOR DE TARJETAS (Usando Flex en lugar de Grid) -->
+  <div class="flex flex-wrap justify-center gap-6 mt-8">
+      <!-- Card 1 -->
+      <div class="group relative w-full md:w-1/3 max-w-xs bg-white shadow-lg rounded-lg overflow-hidden transition-all hover:scale-105 cursor-pointer ">  
+        <div class="h-[400px] bg-cover bg-center transition-opacity duration-300 group-hover:opacity-80 " style="background-image: url('./public/img/metropolitan.avif');"></div>
+        <div class="absolute bottom-0 pl-6 left-0 w-[95%] h-1/2 text-center text-white bg-gradient-to-t from-black to-transparent transition-all duration-300 ">
+              <h3 class="font-bold text-black pt-12">Metropolitan International University</h3>
+              <p class="px-4 text-sm text-black opacity-0 group-hover:opacity-100 transition-opacity duration-300">BQC Corporación tiene la representación de la Metropolitan International University, para varios países en Latinoamérica.</p>
+          </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="group relative w-full md:w-1/3 max-w-xs bg-white shadow-lg rounded-lg overflow-hidden transition-all hover:scale-105 cursor-pointer">
+          <div class="h-[400px] bg-cover bg-center transition-opacity duration-300 group-hover:opacity-80" style="background-image: url('./public/img/maestrias.avif');"></div>
+          <div class="absolute bottom-0 pl-6 left-0 w-[95%] h-1/2 text-center text-white bg-gradient-to-t from-black to-transparent transition-all duration-300">
+              <h3 class="font-bold  text-black pt-12">Educación de Cuarto Nivel - Maestrías</h3>
+              <p class="px-4 text-sm text-black opacity-0 group-hover:opacity-100 transition-opacity duration-300">Nuestra oferta académica de cuarto nivel está enfocada en varios campos del mercado laboral 2025.</p>
+          </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="group relative w-full md:w-1/3 max-w-xs bg-white shadow-lg rounded-lg overflow-hidden transition-all hover:scale-105 cursor-pointer">
+          <div class="h-[400px] bg-cover bg-center transition-opacity duration-300 group-hover:opacity-80" style="background-image: url('./public/img/educacioncontinua.avif');"></div>
+          <div class="absolute bottom-0 pl-6 left-0 w-[95%] h-1/2 text-center text-white bg-gradient-to-t from-black to-transparent transition-all duration-300">
+              <h3 class="font-bold text-black pt-12">Educación de Tercer Nivel - Tecnologías</h3>
+              <p class="px-4 text-sm text-black opacity-0 group-hover:opacity-100 transition-opacity duration-300">Nuestro programa de tecnologías está enfocado en las necesidades del mercado laboral del Ecuador 2025.</p>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="text-center px-5 pb-12 bg-white">
+  <div class="flex flex-wrap justify-center gap-6 mt-8">
+    <div class="w-full md:w-1/3 max-w-xs text-center">
+      <p class="text-2xl font-medium text-black mt-2 pb-6">EDUCACIÓN CONTINUA</p>
+      <div class="group relative bg-white shadow-lg rounded-lg overflow-hidden transition-all hover:scale-105 cursor-pointer">
+          <div class="h-[400px] bg-cover bg-center transition-opacity duration-300 group-hover:opacity-80" 
+               style="background-image: url('./public/img/jysx.avif');"></div>
+          <div class="absolute bottom-0 left-0 w-[95%] h-1/2 text-center text-white bg-gradient-to-t from-black to-transparent transition-all duration-300">
+              <h3 class="font-bold text-black pt-12">Jatun Yachay Sovilecs</h3>
+              <p class="px-4 text-sm text-black opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                La focalización de conocimiento integrado en el país ha sido clave en el desarrollo personal y profesional de todos sus estudiantes.
+              </p>
+          </div>
+      </div>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="w-full md:w-1/3 max-w-xs text-center">
+    <p class="text-2xl font-medium text-black mt-2 pb-6">EDUCACIÓN BÁSICA</p>
+      <div class="group relative bg-white shadow-lg rounded-lg overflow-hidden transition-all hover:scale-105 cursor-pointer">
+          <div class="h-[400px] bg-cover bg-center transition-opacity duration-300 group-hover:opacity-80" 
+               style="background-image: url('./public/img/colegios.avif');"></div>
+          <div class="absolute bottom-0 left-0 w-[95%] h-1/2 text-center text-white bg-gradient-to-t from-black to-transparent transition-all duration-300">
+              <h3 class="font-bold text-black pt-12 w-[80%] pl-[25%]">Unidad Educativa PCEI John Dewey</h3>
+              <p class="px-4 text-sm text-black opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                Educacion básica y bachillerato, preparando a las personas para enfrentar un mundo con una realidad globalizada.
+              </p>
+          </div>
+      </div>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="w-full md:w-1/3 max-w-xs text-center">
+    <p class="text-2xl font-medium text-black mt-2 pb-6">COMERCIALIZADORA</p>
+      <div class="group relative bg-white shadow-lg rounded-lg overflow-hidden transition-all hover:scale-105 cursor-pointer">
+          <div class="h-[400px] bg-cover bg-center transition-opacity duration-300 group-hover:opacity-80" 
+               style="background-image: url('./public/img/comercio.avif');"></div>
+          <div class="absolute bottom-0 left-0 w-[95%] h-1/2 text-center text-white bg-gradient-to-t from-black to-transparent transition-all duration-300">
+              <h3 class="font-bold text-black pt-12">BQC Comercializadora</h3>
+              <p class="px-4 text-sm text-black opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                BQC Comercializadora, empresa dedicada a la fabriciacion y comercializacion de productos de primera necesidad y otros varios.
+              </p>
+          </div>
+      </div>
+  </div>
+  </div>
+</section>
+
+
+<section id="indicators-section" class="text-center py-10 bg-gray-100">
+  <!-- TÍTULO -->
+  <p class="text-3xl md:text-3xl pb-8 uppercase text-center px-6 relative after:content-[''] after:block after:w-16 after:h-[3px] after:bg-orange-500 after:mx-auto after:mt-1">
+    NUESTROS <span class="text-orange-500 block md:inline font-bold">INDICADORES</span>
+</p>
+
+
+  <!-- CONTENEDOR DE INDICADORES -->
+  <div class="flex flex-wrap justify-center gap-10 mt-6">
+      
+      <!-- Indicador 1: Colaboradores -->
+      <div class="flex flex-col items-center w-[150px]">
+          <div class="flex items-center justify-center w-[110px] h-[110px] rounded-full bg-gray-200 p-2">
+              <img src="./public/img/empleado-del-mes.avif" alt="Colaboradores" class="w-[90px] h-[90px] rounded-full">
+          </div>
+          <span class="number block text-2xl font-bold text-orange-500 mt-2" data-value="108">0</span>
+          <p class="text-sm font-bold ">Colaboradores</p>
+      </div>
+
+      <!-- Indicador 2: Proveedores -->
+      <div class="flex flex-col items-center w-[150px]">
+          <div class="flex items-center justify-center w-[110px] h-[110px] rounded-full bg-gray-200 p-2">
+              <img src="./public/img/profesor.avif" alt="Proveedores" class="w-[90px] h-[90px] rounded-full">
+          </div>
+          <span class="number block text-2xl font-bold text-orange-500 mt-2" data-value="350">0</span>
+          <p class="text-sm font-bold">Proveedores</p>
+      </div>
+
+      <!-- Indicador 3: Clientes -->
+      <div class="flex flex-col items-center w-[150px]">
+          <div class="flex items-center justify-center w-[110px] h-[110px] rounded-full bg-gray-200 p-2">
+              <img src="./public/img/cliente.avif" alt="Clientes" class="w-[90px] h-[90px] rounded-full">
+          </div>
+          <span class="number block text-2xl font-bold text-orange-500 mt-2" data-value="250000">0</span>
+          <p class="text-sm font-bold">Clientes</p>
+      </div>
+
+      <!-- Indicador 4: Accionistas -->
+      <div class="flex flex-col items-center w-[150px]">
+          <div class="flex items-center justify-center w-[110px] h-[110px] rounded-full bg-gray-200 p-2">
+              <img src="./public/img/accionista.avif" alt="Accionistas" class="w-[90px] h-[90px] rounded-full">
+          </div>
+          <span class="number block text-2xl font-bold text-orange-500 mt-2" data-value="10">0</span>
+          <p class="text-sm font-bold">Total Accionistas</p>
+      </div>
+
+      <!-- Indicador 5: Empleos Indirectos -->
+      <div class="flex flex-col items-center w-[150px]">
+          <div class="flex items-center justify-center w-[110px] h-[110px] rounded-full bg-gray-200 p-2">
+              <img src="./public/img/gestion-de-equipos (1).avif" alt="Empleos Indirectos" class="w-[90px] h-[90px] rounded-full">
+          </div>
+          <span class="number block text-2xl font-bold text-orange-500 mt-2" data-value="350">0</span>
+          <p class="text-sm font-bold">Empleos Indirectos</p>
+      </div>
+
+  </div>
+</section>
+
+
+<section id="quienes_somos" class="text-center py-10">
+  <!-- TÍTULO -->
+  <h2 class="text-3xl font-normal relative inline-block after:block after:w-16 after:h-[2px] after:bg-orange-500 after:mt-2 after:mx-auto">
+      QUIÉNES <span class="text-orange-500 font-bold">SOMOS</span>
+  </h2>
+
+  <!-- CONTENEDOR FLEX PARA TEXTO + IMAGEN -->
+  <div class="flex flex-col md:flex-row items-center justify-center gap-8 max-w-5xl mx-auto mt-6 px-4">
+      <!-- TEXTO -->
+      <div class="max-w-lg text-justify">
+          <p class="font-bold text-lg">
+              En BQC Corporación, creemos en el poder de la excelencia y el compromiso para transformar vidas.
+          </p>
+          <p class="mt-3">
+              Nos enfocamos en ofrecer productos y servicios que no solo cumplen con los más altos estándares de calidad, 
+              sino que también generan un impacto positivo en cada persona que confía en nosotros. A través de la innovación, 
+              la eficiencia y una gestión responsable, construimos relaciones sólidas con clientes, proveedores y colaboradores, 
+              asegurando crecimiento y bienestar para todos.
+          </p>
+          <p class="mt-3">
+              Con una visión de liderazgo y un firme propósito de generar valor, avanzamos cada día hacia un futuro donde nuestra 
+              presencia y servicio marquen la diferencia en Ecuador.
+          </p>
+      </div>
+
+      <!-- IMAGEN -->
+      <img src="./public/img/20943573.avif" alt="Nosotros" class="w-full md:w-1/3 rounded-lg">
+  </div>
+</section>
+
+
+<section class="flex flex-col items-center justify-center px-6 md:px-10 py-4 bg-gray-100">
+
+<h2 class="text-3xl relative  pt-6 after:block after:w-16 after:h-[3px] after:bg-orange-500 after:mx-auto">
+  ESTRUCTURA <span class="text-orange-500 font-bold">ADMINISTRATIVA</span>
+</h2>
+
+  <!-- CONTENEDOR DE TARJETAS -->
+  <div class="flex flex-wrap justify-center gap-14 mt-8">
+      
+      <!-- TARJETA 1 -->
+      <div class="relative w-[200px] h-[300px] rounded-lg overflow-hidden">
+          <img src="./public/img/DOC-BENJAMIN.avif" alt="Perfil" class="w-full h-full object-cover">
+      </div>
+
+      <!-- TARJETA 2 -->
+      <div class="relative w-[200px] h-[300px] rounded-lg overflow-hidden">
+          <img src="./public/img/DOC-AURELIO.avif" alt="Perfil" class="w-full h-full object-cover">
+      </div>
+
+      <!-- TARJETA 3 -->
+      <div class="relative w-[200px] h-[300px] rounded-lg overflow-hidden">
+          <img src="./public/img/DR-MARTIN.avif" alt="Perfil" class="w-full h-full object-cover">
+      </div>
+
+  </div>
+</section>
+
+
+<section id="mision_vision" class="py-4 bg-gray-100">
+  <div class="flex flex-col md:flex-row items-center justify-center gap-8 max-w-4xl mx-auto px-6">
+      <!-- IMAGEN -->
+      <img src="./public/img/OHPGNP1.avif" alt="Nosotros" class="md:w-[300px] rounded-lg">
+      <!-- TEXTO -->
+      <div class="max-w-lg text-justify">
+          <p class="text-xl font-bold text-orange-500">MISIÓN</p>
+          <p class="mt-2">
+              Mejorar la calidad de vida y cuidar el bolsillo de nuestros Clientes / Proveedores / Colaboradores / Asociados / Accionistas y la comunidad en general, 
+              mediante el abastecimiento de productos y servicios de la mejor calidad, aumentando Eficiencia, Rentabilidad y brindando la mejor EXPERIENCIA al público.
+          </p>
+          <p class="text-xl font-bold text-orange-500 mt-4">VISIÓN</p>
+          <p class="mt-2">
+              "SER la mejor cadena comercial tanto en productos y servicios del ECUADOR".
+          </p>
+      </div>
+  </div>
+</section>
+
+
+<section id="sucrusales_1" class="py-6 pb-12 bg-white text-center">
+  <!-- TÍTULO -->
+  <h2 class="text-3xl relative pb-6 pt-6 after:block after:w-16 after:h-[3px] after:bg-orange-500 after:mx-auto">
+      ESTAMOS EN <span class="text-orange-500 font-bold">TODO EL PAÍS</span>
+  </h2>
+
+  <!-- CONTENEDOR DE UBICACIONES -->
+  <div class="flex flex-wrap justify-center gap-6 mt-6">
+      
+      <!-- UBICACIÓN 1 -->
+      <a href="https://wa.me/593982671215" class="relative w-[250px] h-[350px] rounded-lg shadow-lg overflow-hidden flex flex-col items-center justify-center text-white text-center bg-cover bg-center hover:scale-105 transition-transform duration-300" style="background-image: url('./public/img/riobamba.avif');">
+          <div class="absolute inset-0 bg-black/50"></div>
+          <h3 class="text-xl font-bold relative z-10">RIOBAMBA</h3>
+          <div class="whatsapp-info flex items-center gap-2 p-2 bg-white/20 rounded-lg relative z-10">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="w-5 h-5">
+              <span class="text-sm font-bold">BQC Corporación</span>
+          </div>
+      </a>
+
+      <!-- UBICACIÓN 2 -->
+      <a href="https://wa.me/593985455980" class="relative w-[250px] h-[350px] rounded-lg shadow-lg overflow-hidden flex flex-col items-center justify-center text-white text-center bg-cover bg-center hover:scale-105 transition-transform duration-300" style="background-image: url('./public/img/quito.avif');">
+          <div class="absolute inset-0 bg-black/50"></div>
+          <h3 class="text-xl font-bold relative z-10">QUITO</h3>
+          <div class="whatsapp-info flex items-center gap-2 p-2 bg-white/20 rounded-lg relative z-10">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="w-5 h-5">
+              <span class="text-sm font-bold">GRACE SISA</span>
+          </div>
+      </a>
+
+      <!-- UBICACIÓN 3 -->
+      <a href="https://wa.me/593969700933" class="relative w-[250px] h-[350px] rounded-lg shadow-lg overflow-hidden flex flex-col items-center justify-center text-white text-center bg-cover bg-center hover:scale-105 transition-transform duration-300" style="background-image: url('./public/img/guayaquil.avif');">
+          <div class="absolute inset-0 bg-black/50"></div>
+          <h3 class="text-xl font-bold relative z-10">GUAYAQUIL</h3>
+          <div class="whatsapp-info flex items-center gap-2 p-2 bg-white/20 rounded-lg relative z-10">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="w-5 h-5">
+              <span class="text-sm font-bold">ISAMAR QUITO</span>
+          </div>
+      </a>
+
+      <!-- UBICACIÓN 4 -->
+      <a href="https://wa.me/593993614949" class="relative w-[250px] h-[350px] rounded-lg shadow-lg overflow-hidden flex flex-col items-center justify-center text-white text-center bg-cover bg-center hover:scale-105 transition-transform duration-300" style="background-image: url('./public/img/cuenca.avif');">
+          <div class="absolute inset-0 bg-black/50"></div>
+          <h3 class="text-xl font-bold relative z-10">CUENCA</h3>
+          <div class="whatsapp-info flex items-center gap-2 p-2 bg-white/20 rounded-lg relative z-10">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="w-5 h-5">
+              <span class="text-sm font-bold">DIEGO VALVERDE</span>
+          </div>
+      </a>
+
+       <!-- UBICACIÓN: SANTO DOMINGO -->
+    <a href="https://wa.me/593996805086" class="relative w-[250px] h-[350px] rounded-lg shadow-lg overflow-hidden flex flex-col items-center justify-center text-white text-center bg-cover bg-center hover:scale-105 transition-transform duration-300" style="background-image: url('./public/img/SANTO\ DOMINGO.avif');">
+      <div class="absolute inset-0 bg-black/50"></div>
+      <h3 class="text-xl font-bold relative z-10">SANTO DOMINGO</h3>
+      <div class="flex items-center gap-2 p-2 bg-white/20 rounded-lg relative z-10">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="w-5 h-5">
+          <span class="text-sm font-bold">FABIÁN SOTOMAYOR</span>
+      </div>
+  </a>
+
+  <!-- UBICACIÓN: LOJA -->
+  <a href="https://wa.me/593997863190" class="relative w-[250px] h-[350px] rounded-lg shadow-lg overflow-hidden flex flex-col items-center justify-center text-white text-center bg-cover bg-center hover:scale-105 transition-transform duration-300" style="background-image: url('./public/img/LOJA.avif');">
+      <div class="absolute inset-0 bg-black/50"></div>
+      <h3 class="text-xl font-bold relative z-10">LOJA</h3>
+      <div class="flex items-center gap-2 p-2 bg-white/20 rounded-lg relative z-10">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="w-5 h-5">
+          <span class="text-sm font-bold">KAREN PORTILLA</span>
+      </div>
+  </a>
+
+  </div>
+</section>
+
+
+<footer class="bg-black text-white py-10 px-4 md:px-10">
+  <div class="max-w-screen-xl mx-auto flex flex-wrap justify-between items-start gap-10 text-center md:text-left">
+      
+      <!-- LOGO Y DIRECCIÓN -->
+      <div class="flex-1 min-w-[250px]">
+          <img src="./public/img/BQC BLANCO.avif" alt="BQC Corporación" class="w-40 mx-auto md:mx-0 text-center">
+          <p class="mt-3 text-sm">Corporación Educativa BQC, Riobamba - Ecuador, Eduardo Kingman y Teófilo Sáenz</p>
+      </div>
+
+      <!-- MAESTRÍAS -->
+      <div class="flex-1 min-w-[250px] border-l border-white/30 pl-6 text-center">
+          <h3 class="text-lg font-bold mb-3">MAESTRÍAS</h3>
+          <ul class="space-y-2">
+              <li><a href="maestrias/tecnologicas.html" class="hover:text-orange-500 transition">MAESTRÍA EN HERRAMIENTAS DIGITALES</a></li>
+              <li><a href="maestrias/automatizacion.html" class="hover:text-orange-500 transition">MAESTRÍA EN AUTOMATIZACIÓN Y CONTROL</a></li>
+              <li><a href="maestrias/industrial.html" class="hover:text-orange-500 transition">MAESTRÍA EN SEGURIDAD INDUSTRIAL</a></li>
+          </ul>
+      </div>
+
+      <!-- SERVICIOS -->
+      <div class="flex-1 min-w-[250px] border-l border-white/30 pl-6 text-center">
+          <h3 class="text-lg font-bold mb-3">NUESTROS SERVICIOS</h3>
+          <ul class="space-y-2">
+              <li><a href="https://educacionsuperior.bqc.com.ec/" class="hover:text-orange-500 transition" target="_blank">SERVICIO DE TECNOLOGÍAS</a></li>
+              <li><a href="https://elearning.cjd.edu.ec/" class="hover:text-orange-500 transition" target="_blank">SERVICIO DE BACHILLERATO</a></li>
+              <li><a href="https://capacitadora.bqc.com.ec/" class="hover:text-orange-500 transition" target="_blank">SERVICIO DE EDUCACIÓN CONTINUA</a></li>
+          </ul>
+      </div>
+
+      <!-- REDES SOCIALES -->
+      <div class="flex-1 min-w-[250px] border-l border-white/30 pl-6 text-center">
+          <h3 class="text-lg font-bold mb-3">NUESTRAS REDES SOCIALES</h3>
+          <ul class="space-y-2">
+              <li><a href="https://www.youtube.com/@CORPORACIONEDUCATIVABQC" class="hover:text-orange-500 transition" target="_blank">YOUTUBE</a></li>
+              <li><a href="https://www.instagram.com/corporacioneducativabqc.mv?igsh=eHo0eG0yOTh3ZGx5" class="hover:text-orange-500 transition" target="_blank">INSTAGRAM</a></li>
+              <li><a href="https://www.facebook.com/corporacion.educativa.bqc.matriz" class="hover:text-orange-500 transition" target="_blank">FACEBOOK</a></li>
+              <li><a href="https://api.whatsapp.com/send/?phone=593962929143" class="hover:text-orange-500 transition" target="_blank">WHATSAPP</a></li>
+          </ul>
+      </div>
+      
+  </div>
+</footer>
+
+
+  <script src="./scripts/scripts.js"></script>
+</body>
+</html>
